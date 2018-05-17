@@ -21,14 +21,12 @@ function enviaId(position) {
       document.getElementById(x).removeAttribute('onclick');
       jogador1.push(x);
       jogador1.sort((a, b) => a - b);
-      console.log(jogador1);
       rodada++;
     } else {
       document.getElementById(x).innerHTML = '<p class="center">O</p>';
       document.getElementById(x).removeAttribute('onclick');
       jogador2.push(x);
       jogador2.sort((a, b) => a - b);
-      console.log(jogador2);
       rodada++;
     }
     verifyGameStatus(jogador1, jogador2);
